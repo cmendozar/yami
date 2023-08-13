@@ -501,4 +501,6 @@ for url_comuna in urls_comunas:
 if not os.path.exists("/data"):
     os.mkdir("data")
 
-df.to_csv("data/datos_casas_santiago.csv", encoding="latin1", index=False)
+df.to_csv("data/datos_casas_santiago.csv",
+          encoding="latin1",
+          index=False)
