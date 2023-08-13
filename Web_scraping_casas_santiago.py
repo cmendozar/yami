@@ -251,7 +251,7 @@ def variables(soup_principal):
                             or encabezado == "Seguridad"
                         ):
                             botones_tabla_inmueble.append(boton_tabla)
-
+                    qwe = []
                     # Extracción de datos de la tabla Ambientes, Comodidades y
                     # equipamiento.
                     # Condiciones especiales, Servicios y Seguridad
