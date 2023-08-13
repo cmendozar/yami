@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+import os
 import requests
 from unidecode import unidecode
 import pandas as pd
@@ -496,5 +497,8 @@ for url_comuna in urls_comunas:
 
         if not url_comuna:
             break
+
+if not os.path.exists("/data"):
+    os.mkdir("data")
 
 df.to_csv("data/datos_casas_santiago.csv", encoding="latin1", index=False)
